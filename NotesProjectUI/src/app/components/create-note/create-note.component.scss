@@ -1,0 +1,24 @@
+.update_note{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    input{
+        padding: 7px;
+        margin: 10px;
+    }
+    textarea{
+        padding: 7px;
+        height: 70%;
+        margin: 10px;
+    }
+    .save_btn{
+        display: flex;
+        justify-content: end;
+        padding: 10px;
+        button{
+            cursor: pointer;
+            padding: 7px;
+        }
+    }
+}

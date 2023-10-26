@@ -1,0 +1,17 @@
+<div class="create_btn">
+    <button mat-raised-button (click)="openDialog('0ms', '0ms')">Create<mat-icon>create</mat-icon></button>
+</div>
+<div  *ngFor="let note of notes">
+    <form class="notes" > 
+        <div class="note_group">
+            <div class="note" [class.expanded]="note.expanded" (click)="toggleNote(note)">
+                {{ note.Content }}
+            </div>
+            <div class="note_date">{{ note.ModifiedAt | date: 'medium' }}</div>
+        </div>
+        <div class="buttons">
+            <button (click)="editNote(note.Id)"><mat-icon matTooltip="Edit">edit</mat-icon></button>
+            <button (click)="deleteNote(note.Id)" type="submit"><mat-icon style="color: red;" matTooltip="Delete">delete</mat-icon></button>
+        </div>
+    </form>
+</div>

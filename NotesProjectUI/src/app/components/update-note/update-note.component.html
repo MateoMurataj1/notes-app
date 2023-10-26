@@ -1,0 +1,8 @@
+<div style="height: 100%;">
+    <form class="update_note" [formGroup]="notesService.updateNoteModel" (ngSubmit)="updateNote()">
+        <textarea [(ngModel)]="noteData.Content" name="Content" type="text" formControlName="Content"></textarea>
+        <div class="update_btn">
+            <button mat-raised-button type="submit">Update</button>
+        </div>
+    </form>
+</div>

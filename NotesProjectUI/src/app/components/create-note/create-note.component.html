@@ -1,0 +1,10 @@
+<div style="height: 100%;">
+    <form class="update_note" [formGroup]="notesService.createNoteModel" (ngSubmit)="createNote()">
+        <input type="text" placeholder="Title" formControlName="Title">
+        <textarea type="text" placeholder="Content" formControlName="Content"></textarea>
+        <input type="text" placeholder="Author" formControlName="Author">
+        <div class="save_btn">
+            <button mat-raised-button type="submit">Save</button>
+        </div>
+    </form>
+</div>
